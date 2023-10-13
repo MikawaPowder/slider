@@ -38,8 +38,10 @@ start_time = st.slider(
      format="MM/DD/YY - hh:mm")
 st.write("Start time:", start_time)
 
-start_color, end_color = st.select_slider(
+st.subheader('Select slider')
+
+start_color = st.select_slider(
     'Select a range of color wavelength',
     options=['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'],
-    value=('red', 'blue'))
-st.write('You selected wavelengths between', start_color, 'and', end_color)
+    value=('red'))
+st.write('You selected wavelengths between', start_color)
